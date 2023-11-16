@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(http://localhost/AndromedaGames/imagens/fundo_galx.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url(http://localhost/AndromedaGames/imagens/onda_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-bottom: 10px;
+}
+h1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#link_div a:link, #link_div a:visited, #link_div a:active{
+    font-size: 30px;
+    color: #8c52ff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+#link_div a:hover{
+    background-color: #8c52ff;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+#logo_div {
+    width: 20%;    
+}
+
+#logo_div img{
+    width: 180px;
+    float: left;
+    margin-left: 5px;
+}
+
+#link_div{
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    
+}
+.title{
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.valores, .sobre{
+    color: black;
+    background-color: white;
+    opacity: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    width: 30%;
+    margin: 10px;
+
+}
+
+#principal_sobre, #central1, #central2{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.negrito{
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container{
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.form_div{
+    font-size: 15px;
+    align-items: center;
+    width: 19rem;
+}
+
+.row{
+    width: 100%;
+    font-weight: 100;
+    margin-top: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+}
+
+.botao_cadastrar{
+    background: white;
+    color: #8c52ff;
+    font-weight: 600;
+    margin-top: 7px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+form input{
+    border-radius: 10px;
+    box-shadow: inset;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+form label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.container-radio radio{
+    color: white;
+    margin-bottom: 2px;
+}
+
+.flex{
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.flex>*{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    flex: 1 1 0;
+}
+
+/* Estilização menu */
+.menu{
+    background-color: #322580;    
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#index{
+    height: 250px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.user-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 18px;
+}
+
+.logout-button {
+    background-color: #8c52ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+ /* Estilos do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #8c52ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Banners início */
+
+.banner{
+	margin: 20px auto;
+	width: 960px;
+ 	height: 540px; 
+	animation: slides 30s infinite;
+    transition: opacity o.5s;
+	background-size: cover;
+	border-radius: 10px; 
+}
+
+@keyframes slides{
+
+0%, 30%{
+	background-image: url(../imagens/banner1.png);
+	repeat: no-repeat;
+}
+
+35%, 65%{ 
+	background-image: url(../imagens/banner2.png);
+	repeat: no-repeat;
+}
+
+70%, 100%{ 
+	background-image: url(../imagens/banner3.png);
+ 	repeat: no-repeat;
+}}
+
+/* Carrossel */
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 130px;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+  }
+
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
+
+  /* Catálogo jogos */
+#central2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 130px;
+}
+.container-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid #8c52ff 2px;
+    overflow: hidden;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+}
+
+.container-produto img{
+    width: 200px;
+    height: 200px;
+    opacity: 100%;
+}
+
+.prod-title{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+/* Categorias */
+#central3 {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 250px;
+  }
+  
+  .categoria {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #8c52ff;
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px
+  }
+  .categoria:hover{
+    font-size: 20px;
+    transition: 0.2s;
+  }
+  
+  #central3 .categoria {
+    flex: 1 1 35%;
+  }
+  
+  #central3 .prod-title {
+    display: flex;
+    order: -1;
+  }
+
+/* admin */
+
+.botao-editar{
+    background: #8c52ff;
+}
+
+
+.botao-excluir{
+    background: crimson;
+}
+
+.container-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+table{
+    border-radius: 1%;
+    width: 100%;
+    margin: auto 0;
+}
+table, th, td{
+    border: 1px solid whitesmoke;
+}
+
+
+table th{
+    border-radius: 5%;
+    padding: 11px 0 11px;
+    background-color:whitesmoke;
+    color: #333B1E;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 8px;
+}
+
+
+table tr{
+    border: 1px solid #ddd;
+}
+
+
+table td{
+    color: #FFF;
+    font-size: 18px;
+    padding: 8px;
+}
+.container-admin-banner h1{
+    margin-top: 40px;
+    font-size: 30px;
+    color: #EBC181;
+}
+
+
+.container-lista-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+
+.container-lista{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #EBC181 0.5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px 0;
+}
+
+
+.container-lista h3{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+table tbody tr td a, .botao-cadastrar, .botao-editar, .botao-excluir{
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.7s;
+    border: none;
+    font-size: 18px;
+}
+
+
+
+
+table tbody tr td a:hover, .botao-cadastrar:hover, .botao-editar:hover,.botao-excluir:hover{
+    cursor: pointer;
+    filter: saturate(150%);
+}
